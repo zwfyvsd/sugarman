@@ -9,11 +9,11 @@ void init_print(){
     }
     printf("\n");
     for (init_print_i=0;init_print_i<man_number;init_print_i++){
-        printf("===Sugar man %d===\n");
+        printf("===Sugar man %d===\n",init_print_i);
         printf("Location: (%d, %d)\n",sugarman[init_print_i].location.x,sugarman[init_print_i].location.y);
         printf("Characteristics: \n");
         printf("    Sight: %d\n",sugarman[init_print_i].characteristics.sight);
-        printf("    Speed: %d\n",sugarman[init_print_i].characteristics.speed);
+        printf("    Food consumption: %d\n",sugarman[init_print_i].characteristics.food_consumption);
         printf("    Reproducing speed : %d\n\n",sugarman[init_print_i].characteristics.reproducing_speed);
     }
     printf("############\n\n\n");

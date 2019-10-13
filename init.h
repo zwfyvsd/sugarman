@@ -2,7 +2,7 @@ void setup_map(){
 	int setup_map_i,setup_map_j;
 	for (setup_map_i=0;setup_map_i<size_x;setup_map_i++){
 		for (setup_map_j=0;setup_map_j<size_y;setup_map_j++){
-			map[setup_map_i][setup_map_j].sugar=10*(map[setup_map_i][setup_map_j].growth=rand()%max_sugar);
+			map[setup_map_i][setup_map_j].sugar=10*(map[setup_map_i][setup_map_j].growth=rand()%max_sugar_growth);
             map[setup_map_i][setup_map_j].occupied=0;
 		}
 	}
@@ -18,7 +18,6 @@ void setup_loca(int setup_loca_man){
 
 void setup_chara(int setup_chara_man){
 	sugarman[setup_chara_man].characteristics.sight=rand()%max_sight;
-        sugarman[setup_chara_man].characteristics.speed=rand()%max_speed;
         sugarman[setup_chara_man].characteristics.food_consumption=rand()%max_food_consumption;
         sugarman[setup_chara_man].characteristics.reproducing_speed=rand()%max_reproducing_speed;
 	return;

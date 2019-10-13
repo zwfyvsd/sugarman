@@ -9,7 +9,7 @@ void print(){
     }
     printf("\n");
     for (print_i=0;print_i<man_number;print_i++){
-        printf("===Sugar man %d===\n");
+        printf("===Sugar man %d===\n",print_i);
         printf("Location: (%d, %d)\n",sugarman[print_i].location.x,sugarman[print_i].location.y);
         printf("Weight: %d\n\n",sugarman[print_i].weight);
     }

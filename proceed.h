@@ -11,9 +11,9 @@ void search_sugar(int search_sugar_man){
     }search_sugar_location;
     int search_sugar_i,search_sugar_j;
     search_sugar_boundary.left=((sugarman[search_sugar_man].location.x-sugarman[search_sugar_man].characteristics.sight)>0)?(sugarman[search_sugar_man].location.x-sugarman[search_sugar_man]. characteristics.sight):0;
-    search_sugar_boundary.right=((sugarman[search_sugar_man].location.x+sugarman[search_sugar_man]. characteristics.sight)<size_x)?(sugarman[search_sugar_man].location.x+sugarman[search_sugar_man]. characteristics.sight):size_x;
+    search_sugar_boundary.right=((sugarman[search_sugar_man].location.x+sugarman[search_sugar_man]. characteristics.sight+1)<size_x)?(sugarman[search_sugar_man].location.x+sugarman[search_sugar_man]. characteristics.sight+1):size_x;
     search_sugar_boundary.top=((sugarman[search_sugar_man].location.y-sugarman[search_sugar_man].characteristics.sight)>0)?(sugarman[search_sugar_man].location.y-sugarman[search_sugar_man]. characteristics.sight):0;
-    search_sugar_boundary.bottom=((sugarman[search_sugar_man].location.y+sugarman[search_sugar_man].characteristics.sight)<size_y)?(sugarman[search_sugar_man].location.y+sugarman[search_sugar_man]. characteristics.sight):size_y;
+    search_sugar_boundary.bottom=((sugarman[search_sugar_man].location.y+sugarman[search_sugar_man].characteristics.sight+1)<size_y)?(sugarman[search_sugar_man].location.y+sugarman[search_sugar_man]. characteristics.sight+1):size_y;
     map[sugarman[search_sugar_man].location.x][sugarman[search_sugar_man].location.y].occupied=0;
     search_sugar_location.x=sugarman[search_sugar_man].location.x;
     search_sugar_location.y=sugarman[search_sugar_man].location.y;
